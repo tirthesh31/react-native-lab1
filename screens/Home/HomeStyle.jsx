@@ -11,46 +11,45 @@ const HomeStyle = StyleSheet.create({
     },
     taskParentBackground: {
         padding: 20,
-        marginTop: 20,
+        marginTop: 20, // You can reduce this if you want to bring tasks closer to the header
         justifyContent: 'center',
         paddingTop: 0,
     },
     taskBackground: {
         padding: 20,
-        marginTop: 20,
+        margin: 5, // Adjust this to a smaller number (like 5 or 2) to reduce space between tasks
         backgroundColor: Colors.componentBackground,
         borderRadius: 10,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between', // Ensures space between task text and buttons
     },
     taskText: {
         flex: 1, // Allows text to take up available space
         color: 'white', // Optional: Adjust color based on your design
-        fontSize:18
+        fontSize: 18,
     },
     icon: {
         width: 30,
         height: 30,
-        tintColor:Colors.component
+        tintColor: Colors.component,
     },
     buttonContainer: {
-        display:'flex',
-        flexDirection:'row',
-        justifyContent:'space-evenly',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
     },
     actionButton: {
-        backgroundColor:Colors.component,
-        paddingHorizontal:65,
-        marginTop:2.5,
-        paddingVertical:10,
-        borderBottomLeftRadius:10,
-        borderBottomRightRadius:10
+        backgroundColor: Colors.component,
+        paddingHorizontal: 65,
+        marginTop: 2.5,
+        paddingVertical: 10,
+        borderBottomLeftRadius: 10,
+        borderBottomRightRadius: 10,
     },
     buttonText: {
-        fontSize:18,
-        color:Colors.white
+        fontSize: 18,
+        color: Colors.white,
     }
 });
 
