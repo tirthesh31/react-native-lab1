@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native'; // Import NavigationContainer
 import Home from './screens/Home/Home.jsx';
@@ -10,6 +10,7 @@ import colors from './colors/Colors.js';
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+
   return (
     <NavigationContainer> 
       <Tab.Navigator

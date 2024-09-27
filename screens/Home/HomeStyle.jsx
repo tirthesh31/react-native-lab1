@@ -8,16 +8,15 @@ const HomeStyle = StyleSheet.create({
         color: Colors.componentBackground,
         marginTop: 70,
         marginLeft: 20,
+        marginBottom:20
     },
     taskParentBackground: {
-        padding: 20,
-        marginTop: 20, // You can reduce this if you want to bring tasks closer to the header
+        margin: 5, // You can reduce this if you want to bring tasks closer to the header
         justifyContent: 'center',
-        paddingTop: 0,
+        //paddingTop: 0,
     },
     taskBackground: {
         padding: 20,
-        margin: 5, // Adjust this to a smaller number (like 5 or 2) to reduce space between tasks
         backgroundColor: Colors.componentBackground,
         borderRadius: 10,
         display: 'flex',
@@ -50,7 +49,13 @@ const HomeStyle = StyleSheet.create({
     buttonText: {
         fontSize: 18,
         color: Colors.white,
-    }
+    },
+    bullet: {
+        width: 20,        
+        height: 20,       
+        borderRadius: 5,  
+        marginRight: 10,  
+    },
 });
 
 export default HomeStyle;
