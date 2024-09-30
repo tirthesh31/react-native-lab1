@@ -47,8 +47,8 @@ function Home() {
 
   const deleteTask = async (taskId) => {
     try {
-      await firebase.database().ref(`tasks/${taskId}`).remove();
-      setTasks(tasks.filter((task) => task.id !== taskId));
+      await firebase.database().ref(`tasks/${taskId}/delete`).set(1);
+      console.log('Task marked as deleted');
     } catch (error) {
       console.error('Error deleting task: ', error);
     }
@@ -118,7 +118,7 @@ function Home() {
         <Text>No tasks available.</Text>
       ) : (
         tasks
-          .filter((task) => task.complete === 0)
+          .filter((task) => task.complete === 0 && task.delete === 0)
           .map((task) => (
             <View key={task.id} style={HomeStyle.taskParentBackground}>
               <TouchableOpacity

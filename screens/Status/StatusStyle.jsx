@@ -19,7 +19,7 @@ const StatusStyle = StyleSheet.create({
     button: {
         backgroundColor: Colors.component, // Background color for the button
         padding: 15,
-        paddingHorizontal: 30,
+        paddingHorizontal: 20,
         borderRadius: 5,
         alignSelf: 'flex-end', // Align button to the right
     },
@@ -66,16 +66,16 @@ const StatusStyle = StyleSheet.create({
     },
     taskText: {
         fontSize: 18,
-        color: Colors.white, // Assuming Colors.text is defined in your Colors file
+        color: Colors.white, 
     },
     taskDescription: {
         fontSize: 14,
-        color: Colors.white, // Define a secondary text color in Colors.js for description
+        color: Colors.white, 
         marginVertical: 2,
     },
     taskDate: {
         fontSize: 12,
-        color: Colors.white, // Define a light text color in Colors.js for date
+        color: Colors.white, 
         marginTop: 2,
     },
     
