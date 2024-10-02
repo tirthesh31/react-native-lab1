@@ -59,6 +59,7 @@ function Add({ task, onSubmit, onCancel }) {
       importance: taskImportance,
       date: new Date().toISOString(), // Store current date and time in ISO format
       complete: 0,
+      delete:0
     };
 
     // Reference to the 'tasks' collection in Firebase
